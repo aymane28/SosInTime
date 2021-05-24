@@ -13,9 +13,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/SosInTimeA"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/fond1"
+        android:label="SosInTime"
+        android:roundIcon="@drawable/fond1"
         android:supportsRtl="true"
         android:theme="@style/Theme.SosInTimeA">
 
@@ -29,46 +29,30 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".test">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
-        <activity android:name=".ToolbarActivity"/>
+        <activity android:name=".ValidateActivity">
+
+        </activity>
 
         <activity android:name=".AboutActivity"
             android:parentActivityName=".MainActivity"
             android:label="About me"/>
 
 
-        <activity android:name=".ToolbarActivity"
-            tools:ignore="DuplicateActivity" />
         <activity android:name=".ProfilActivity"
             tools:ignore="Instantiatable,WrongManifestParent">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
-        <activity android:name=".ToolbarActivity"
-            tools:ignore="DuplicateActivity" />
+
 <activity android:name=".ParamètresActivity"
     tools:ignore="Instantiatable,MissingClass,WrongManifestParent">
-<intent-filter>
-    <action android:name="android.intent.action.MAIN" />
-    <category android:name="android.intent.category.LAUNCHER" />
-</intent-filter>
+
 </activity>
 
 
