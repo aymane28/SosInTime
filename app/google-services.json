@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402690772400",
+    "project_id": "sosintime-87c09",
+    "storage_bucket": "sosintime-87c09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402690772400:android:a6831955f6b5889bcf1a75",
+        "android_client_info": {
+          "package_name": "com.example.sosintimea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402690772400-s91rppm1v7hc3v4mjn4n66r7h8qcv3an.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARgzf9dXmJl5jKx2z7DU51G_DuhDV0Mrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402690772400-s91rppm1v7hc3v4mjn4n66r7h8qcv3an.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
