@@ -1,8 +1,5 @@
 package com.example.sosintimea;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,13 +10,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
-    EditText mNom, mPrenom, mEmail, mMotDePasse;
+    EditText mNom, mPrenom, mEmail, mNum, mMotDePasse;
     Button mRegisterBtn;
     TextView mLoginBtn;
     FirebaseAuth fAuth;
@@ -34,6 +34,7 @@ public class Register extends AppCompatActivity {
         mNom = findViewById(R.id.Nom);
         mPrenom = findViewById(R.id.Prenom);
         mEmail = findViewById(R.id.Email);
+        mNum = findViewById(R.id.Number);
         mMotDePasse = findViewById(R.id.MotDePasse);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.createText);
