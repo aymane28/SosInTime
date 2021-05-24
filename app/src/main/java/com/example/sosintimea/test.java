@@ -38,7 +38,7 @@ public class test extends AppCompatActivity {
 
     public void sendSMS(View view){
 
-        String message = "Au secours! Je suis en danger, viens aide moi le plutôt possibele.";
+        String message = "Au secours! Je suis en danger, viens aide moi le plutôt possible.";
         String number = editTextNumber.getText().toString();
 
         SmsManager mySmsManager = SmsManager.getDefault();
