@@ -182,7 +182,7 @@ public class test extends AppCompatActivity {
         String number = editTextNumber.getText().toString();
 
         SmsManager mySmsManager = SmsManager.getDefault();
-        mySmsManager.sendTextMessage(number,null, message+mess, null, null);
+        mySmsManager.sendTextMessage(number,null, mess, null, null);
         startActivity(new Intent(getApplicationContext(),ValidateActivity.class)); //retour à la page de connexion
         finish();
     }
