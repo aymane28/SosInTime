@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,10 +15,17 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ProfilActivity extends AppCompatActivity {
     private Toolbar toolbar;
+
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_profil);
+
+            Intent intent = getIntent();
+            String str=intent.getStringExtra(Login.EXTRA_MESSAGE);
+            TextView textView = findViewById(R.id.textView);
+            textView.setText(str);
+
 
             toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);

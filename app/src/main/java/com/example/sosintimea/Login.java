@@ -19,11 +19,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE="com.example.sosintimea";
+
     EditText mEmail, mMotDePasse;
     Button mLoginBtn;
     TextView mCreateBtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,8 @@ public class Login extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.LoginBtn);
         mCreateBtn = findViewById(R.id.createText);
+
+        Intent intent = null;
 
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +77,12 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Connexion réussie", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+/*
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            EditText editText=(EditText) findViewById(R.id.mess);
+                            String str = editText.getText().toString();
+                            intent.putExtra(EXTRA_MESSAGE, str);
+                            startActivity(intent);*/
                         }
                         else {
                             Toast.makeText(Login.this, "Erreur !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -94,4 +106,12 @@ public class Login extends AppCompatActivity {
         });
 
     }
+/*
+    public void ChangeActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        EditText editText=(EditText) findViewById(R.id.mess);
+        String str = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, str);
+        startActivity(intent);
+    }*/
 }

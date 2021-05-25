@@ -19,20 +19,6 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="-4dp" />
 
-    <TextView
-        android:layout_width="349dp"
-        android:layout_height="31dp"
-        android:fontFamily="casual"
-        android:text=" Validation d'envoi du message"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="349dp"
@@ -80,6 +66,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="87dp"
+        android:layout_height="93dp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="422dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

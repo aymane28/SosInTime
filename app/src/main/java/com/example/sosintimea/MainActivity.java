@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void send_sms(View view) {
-        FirebaseAuth.getInstance().signOut(); //déconnexion
-        startActivity(new Intent(getApplicationContext(),test.class)); //retour à la page de connexion
-        finish();
+
+        startActivity(new Intent(getApplicationContext(),test.class));
+
     }
 
     @Override

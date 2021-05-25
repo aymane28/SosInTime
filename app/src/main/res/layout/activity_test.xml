@@ -10,23 +10,6 @@
     layout="@layout/activity_toolbar" />
 
 
-    <TextView
-        android:layout_width="144dp"
-        android:layout_height="40dp"
-        android:layout_gravity="left"
-        android:fontFamily="casual"
-        android:text=" Sos In Time"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018"
-        tools:ignore="MissingConstraints" />
-
     <EditText
         android:id="@+id/editTextNumber"
 
@@ -35,7 +18,7 @@
         android:layout_marginTop="92dp"
         android:background="#68C2CF"
         android:ems="10"
-        android:hint="   Tapez le numéro"
+        android:hint="   Tapez le numéro de téléphone"
         android:inputType="textPersonName"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <Button
         android:id="@+id/sendSMS"
@@ -133,6 +116,78 @@
         app:srcCompat="@android:drawable/ic_menu_help"
         app:tint="#DFE3EA"
         tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
+        android:text="adress"
+        android:textColor="#D30F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/sw_locationsupdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="52dp"
+        android:checked="true"
+        android:text="Location Updates"
+        android:textColor="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_updates"
+        android:layout_width="72dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="52dp"
+        android:text="Off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_labelupdates" />
+
+    <TextView
+        android:id="@+id/tv_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="Cell Tower + Wifi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_labelupdates" />
+
+    <Switch
+        android:id="@+id/sw_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="76dp"
+        android:text="GPS/SavePower"
+        android:textColor="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_labelupdates" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE="com.example.sosintimea";
+
     EditText mNom, mPrenom, mEmail, mNum, mMotDePasse;
     Button mRegisterBtn;
     TextView mLoginBtn;
@@ -34,7 +37,7 @@ public class Register extends AppCompatActivity {
         mNom = findViewById(R.id.Nom);
         mPrenom = findViewById(R.id.Prenom);
         mEmail = findViewById(R.id.Email);
-        mNum = findViewById(R.id.Number);
+        //mNum = findViewById(R.id.Number);
         mMotDePasse = findViewById(R.id.MotDePasse);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.createText);
@@ -61,6 +64,7 @@ public class Register extends AppCompatActivity {
                     mEmail.setError("Veuillez remplir toutes les cases");
                     return;
                 }
+
 
                 if (TextUtils.isEmpty(motdepasse)) {
                     mMotDePasse.setError("Veuillez remplir toutes les cases");
@@ -97,9 +101,18 @@ public class Register extends AppCompatActivity {
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Login.class)); // va à la page de connexion
+                startActivity(new Intent(getApplicationContext(), Login.class));
+                // va à la page de connexion
             }
         });
 
     }
+/*
+    public void ChangeActivity(View view) {
+        Intent intent = new Intent(this, Login.class);
+        EditText editText=(EditText) findViewById(R.id.mess);
+        String str = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, str);
+        startActivity(intent);
+    }*/
 }
