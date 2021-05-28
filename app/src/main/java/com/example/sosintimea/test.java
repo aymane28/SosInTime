@@ -183,12 +183,10 @@ public class test extends AppCompatActivity {
 
         SmsManager mySmsManager = SmsManager.getDefault();
         mySmsManager.sendTextMessage(number,null, mess, null, null);
+        mySmsManager.sendTextMessage(number,null, message, null, null);
         startActivity(new Intent(getApplicationContext(),ValidateActivity.class)); //retour à la page de connexion
         finish();
     }
-
-
-
 
 
     @Override
